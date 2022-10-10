@@ -45,6 +45,15 @@
 </header>
 		<main class="container">
 			<div class="swap__inner border-rectangle">
+				<div class="request-notify request-notify_showed">
+	<div class="request-notify__inner">
+		<div class="request-notify__info">
+			you have <span class="underline">1 incoming</span> request from
+		</div>
+		<div class="request-notify__wallet underline">0x1wD...9Fw4</div>
+		<div class="request-notify__review">review request</div>
+	</div>
+</div>
 				<div class="filters">
 	<div class="filters__inner">
 		<div class="filters__arrow_left"><img src="img/icons/arrow-left.svg" alt=""></div>
@@ -249,29 +258,28 @@
 		</div>
 	</div>
 </div>
-				<div class="summary">
+				<div class="summary summary_private summary_showed summary_close">
 	<div class="summary__inner">
 		<div class="summary__head">
 			<div class="summary__title">summary</div>
 			<div class="summary__changers">
-				<div class="summary__changer summary__changer_before">3</div>
+				<div class="summary__changer summary__changer_before">2</div>
+				<div class="summary__changer_arrow">
+					<img src="img/icons/changer-arrow.svg" alt="arrow">
+				</div>
+				<div class="summary__changer summary__changer_after summary__changer_after_active">1</div>
 			</div>
 			<div class="summary__modify">clear</div>
-			<div class="summary__hidder summary__hidder_open"></div>
+			<div class="summary__hidder"></div>
 		</div>
-		<div class="summary__content">
-			<div class="summary__items">
-				<div class="summary__item summary-item">
-					<div class="summary-item__image">
-						<picture><source srcset="img/nfts/nft1.webp" type="image/webp"><img src="img/nfts/nft1.png" alt="nft"></picture>
-					</div>
-					<div class="summary-item__content">
-						<div class="summary-item__title">posersnft</div>
-						<div class="summary-item__serial">poser #4234</div>
-					</div>
-					<div class="summary-item__delete"></div>
-				</div>
 
+		<div class="summary__subhead">
+			<p>Swap <span>2 item</span></p>
+			<p>for <span>1 item</span></p>
+		</div>
+
+		<div class="summary__content">
+			<div class="summary__items summary__items_private summary__items_before">
 				<div class="summary__item summary-item">
 					<div class="summary-item__image">
 						<picture><source srcset="img/nfts/nft1.webp" type="image/webp"><img src="img/nfts/nft1.png" alt="nft"></picture>
@@ -294,9 +302,27 @@
 					<div class="summary-item__delete"></div>
 				</div>
 			</div>
+
+			<div class="summary__separator">
+				<img src="img/icons/summary_arrow.svg" alt="arrow">
+			</div>
+
+			<div class="summary__items summary__items_private summary__items_after">
+				<div class="summary__item summary-item">
+					<div class="summary-item__image">
+						<picture><source srcset="img/nfts/nft1.webp" type="image/webp"><img src="img/nfts/nft1.png" alt="nft"></picture>
+					</div>
+					<div class="summary-item__content">
+						<div class="summary-item__title">posersnft</div>
+						<div class="summary-item__serial">poser #4234</div>
+					</div>
+					<div class="summary-item__delete"></div>
+				</div>
+			</div>
 		</div>
+
 		<button class="summary__button button">
-			<div class="button__text">proceed</div>
+			<div class="button__text">swap in private</div>
 		</button>
 	</div>
 </div>
