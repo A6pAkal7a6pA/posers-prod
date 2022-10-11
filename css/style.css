@@ -154,6 +154,7 @@ a {
   background-clip: padding-box;
   background-origin: content-box;
   position: relative;
+  cursor: pointer;
 }
 
 .button::after {
@@ -175,6 +176,10 @@ a {
   width: 100%;
   height: 100%;
   box-shadow: inset -4px -4px rgba(0, 0, 0, 0.3);
+}
+
+.button:hover::before {
+  box-shadow: inset -8px -8px rgba(0, 0, 0, 0.3019607843);
 }
 
 .button_disabled {
@@ -370,6 +375,10 @@ a {
   position: relative;
 }
 
+.filters__arrow {
+  cursor: pointer;
+}
+
 .filters__arrow_left {
   position: absolute;
   right: 0px;
@@ -536,6 +545,7 @@ a {
   font-size: 14px;
   line-height: 18px;
   color: #7a7c7f;
+  cursor: pointer;
 }
 
 .selects__square {
@@ -565,6 +575,7 @@ a {
   position: relative;
   border: 5px solid rgba(255, 255, 255, 0.5);
   background-clip: content-box;
+  cursor: pointer;
 }
 
 .posts__item_before {
@@ -662,6 +673,7 @@ a {
   line-height: 18px;
   color: #000000;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .tabs__item_active {
@@ -796,6 +808,7 @@ a {
   width: 9px;
   height: 15px;
   background: url("../img/icons/arrow-down.svg") center/contain no-repeat;
+  cursor: pointer;
 }
 
 .summary__title {
@@ -811,6 +824,7 @@ a {
   font-size: 14px;
   line-height: 18px;
   color: #7a7c7f;
+  cursor: pointer;
 }
 
 .summary__content {
@@ -841,7 +855,7 @@ a {
 }
 
 .summary__button_green {
-  background-color: #9ECA58;
+  background-color: #9eca58;
 }
 
 .summary__button_rose {
@@ -945,13 +959,14 @@ a {
   width: 12px;
   height: 3px;
   background: #000000;
+  cursor: pointer;
 }
 
 .swap-request {
   background: #efefed;
   width: 100%;
   height: calc(100vh - 65px);
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 65px;
   padding: 16px;
@@ -1057,10 +1072,6 @@ a {
   z-index: 3;
   max-height: 50%;
   display: none;
-}
-
-.request-notify_showed {
-  display: block;
 }
 
 .request-notify__inner {
@@ -2143,15 +2154,19 @@ a {
 
   .posts {
     max-width: 100%;
+    padding-bottom: 70px;
   }
 
   .posts__item_after {
     border: 5px solid #9ECA58;
   }
 
-  .swap-wallet {
-    padding: 0;
-    text-align: center;
+  .market {
+    margin-bottom: 20px;
+  }
+
+  .market .swap-wallet {
+    display: none;
   }
 
   .summary {
@@ -2184,6 +2199,8 @@ a {
 
   .summary_wallet .swap-wallet {
     display: block;
+    padding: 0;
+    text-align: center;
   }
 
   .summary::before {
@@ -2219,6 +2236,10 @@ a {
     margin-left: 16px;
     flex-grow: 1;
     flex-shrink: 1;
+  }
+
+  .request-notify_showed {
+    display: block;
   }
 }
 
