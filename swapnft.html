@@ -4,14 +4,14 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.min.css?_v=20221011113343">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221016123247">
 	<title>Swap</title>
 </head>
 
 <body>
 	<div class="wrapper swap">
 		<header class="header">
-	<div class="header__inner container">
+	<div class="header__inner">
 		<div class="header__manage">
 			<div class="header__burger burger">
 				<span></span>
@@ -27,12 +27,30 @@
 			</div>
 			<div class="header__notification">
 				<img src="img/icons/notification.svg" alt="notification">
+				<div class="request-notify request-notify_showed">
+	<div class="request-notify__inner">
+		<div class="request-notify__info">
+			you have <span class="underline">1 incoming</span> request from
+		</div>
+		<div class="request-notify__wallet underline">0x1wD...9Fw4</div>
+		<div class="request-notify__review">review request</div>
+	</div>
+</div>
 			</div>
 		</div>
 
 		<div class="header__action">
-			<div class="header__info">
-				you have <span class="header__info_nft">6 NFTS</span> in the pool
+			<div class="header__notification">
+				<img src="img/icons/notification.svg" alt="notification">
+				<div class="request-notify request-notify_showed">
+	<div class="request-notify__inner">
+		<div class="request-notify__info">
+			you have <span class="underline">1 incoming</span> request from
+		</div>
+		<div class="request-notify__wallet underline">0x1wD...9Fw4</div>
+		<div class="request-notify__review">review request</div>
+	</div>
+</div>
 			</div>
 			<div class="button">
 				<div class="button__text">
@@ -40,7 +58,6 @@
 				</div>
 			</div>
 		</div>
-
 	</div>
 </header>
 		<main class="container">
@@ -67,10 +84,24 @@
 				<li class="filters__item button">
 					<div class="filters__text button__text">Eyes</div>
 					<div class="filters__arrow filters__arrow_down"><img src="img/icons/arrow-down.svg" alt=""></div>
+					<div class="filters-dropdown">
+						<div class="filters-dropdown__item">Summer nest</div>
+						<div class="filters-dropdown__item">Spring Nest</div>
+						<div class="filters-dropdown__item">Winter nest</div>
+						<div class="filters-dropdown__item">Black mohawk</div>
+						<div class="filters-dropdown__item">Fall nest</div>
+					</div>
 				</li>
-				<li class="filters__item button">
+				<li class="filters__item filters__item_opened button">
 					<div class="filters__text button__text">hairstyle</div>
 					<div class="filters__arrow filters__arrow_down"><img src="img/icons/arrow-down.svg" alt=""></div>
+					<div class="filters-dropdown">
+						<div class="filters-dropdown__item filters-dropdown__item_active">Summer nest</div>
+						<div class="filters-dropdown__item">Spring Nest</div>
+						<div class="filters-dropdown__item">Winter nest</div>
+						<div class="filters-dropdown__item">Black mohawk</div>
+						<div class="filters-dropdown__item">Fall nest</div>
+					</div>
 				</li>
 				<li class="filters__item button">
 					<div class="filters__text button__text">hats</div>
@@ -90,6 +121,7 @@
 				</li>
 			</ul>
 		</div>
+		<!-- <img class="filters__end" src="img/icons/square.svg" alt="end"> -->
 	</div>
 </div>
 				<div class="market">
@@ -103,8 +135,8 @@
 			<div class="market__line"></div>
 			
 			<div class="market__tabs tabs">
-				<div class="tabs__item tabs__item_active">put in the pool</div>
-				<div class="tabs__item">get from pool</div>
+				<div class="tabs__item tabs__item_active">Get from the pool</div>
+				<div class="tabs__item">Put in the pool</div>
 			</div>
 		</div>
 
@@ -113,7 +145,7 @@
 	<div class="selects__items">
 		<div class="selects__number">10 items</div>
 		<div class="selects__square"></div>
-		<div class="selects__wallet">0x0BD...9FD3</div>
+		<a href="https://etherscan.io" target="_blank" class="selects__wallet underline">0x0BD...9FD3</a>
 	</div>
 	<div class="selects__content">
 		<div class="selects__variant">select all</div>
@@ -123,6 +155,126 @@
 </div>
 			<div class="posts">
 	<div class="posts__inner">
+		<div class="posts__item">
+			<div class="posts__image border-rectangle">
+				<picture><source srcset="img/nfts/nft1.webp" type="image/webp"><img class="posts__img" src="img/nfts/nft1.png" alt="nft"></picture>
+			</div>
+			<div class="posts__title">posersnft</div>
+			<div class="posts__serial">poser #4234</div>
+			<div class="posts__money">
+				<div class="posts__position">last</div>
+				<div class="posts__amount">0.12</div>
+				<div class="posts__coin"><img src="img/coins/eth.svg" alt="coin"></div>
+			</div>
+		</div>
+		<div class="posts__item posts__item_before">
+			<div class="posts__image border-rectangle">
+				<picture><source srcset="img/nfts/nft2.webp" type="image/webp"><img class="posts__img" src="img/nfts/nft2.png" alt="nft"></picture>
+			</div>
+			<div class="posts__title">posersnft</div>
+			<div class="posts__serial">poser #4234</div>
+			<div class="posts__money">
+				<div class="posts__position">last</div>
+				<div class="posts__amount">0.12</div>
+				<div class="posts__coin"><img src="img/coins/eth.svg" alt="coin"></div>
+			</div>
+		</div>
+		<div class="posts__item posts__item_after">
+			<div class="posts__image border-rectangle">
+				<picture><source srcset="img/nfts/nft3.webp" type="image/webp"><img class="posts__img" src="img/nfts/nft3.png" alt="nft"></picture>
+			</div>
+			<div class="posts__title">posersnft</div>
+			<div class="posts__serial">poser #4234</div>
+			<div class="posts__money">
+				<div class="posts__position">last</div>
+				<div class="posts__amount">0.12</div>
+				<div class="posts__coin"><img src="img/coins/eth.svg" alt="coin"></div>
+			</div>
+		</div>
+		<div class="posts__item">
+			<div class="posts__image border-rectangle">
+				<picture><source srcset="img/nfts/nft4.webp" type="image/webp"><img class="posts__img" src="img/nfts/nft4.png" alt="nft"></picture>
+			</div>
+			<div class="posts__title">posersnft</div>
+			<div class="posts__serial">poser #4234</div>
+			<div class="posts__money">
+				<div class="posts__position">last</div>
+				<div class="posts__amount">0.12</div>
+				<div class="posts__coin"><img src="img/coins/eth.svg" alt="coin"></div>
+			</div>
+		</div>
+		<div class="posts__item">
+			<div class="posts__image border-rectangle">
+				<picture><source srcset="img/nfts/nft5.webp" type="image/webp"><img class="posts__img" src="img/nfts/nft5.png" alt="nft"></picture>
+			</div>
+			<div class="posts__title">posersnft</div>
+			<div class="posts__serial">poser #4234</div>
+			<div class="posts__money">
+				<div class="posts__position">last</div>
+				<div class="posts__amount">0.12</div>
+				<div class="posts__coin"><img src="img/coins/eth.svg" alt="coin"></div>
+			</div>
+		</div>
+		<div class="posts__item">
+			<div class="posts__image border-rectangle">
+				<picture><source srcset="img/nfts/nft6.webp" type="image/webp"><img class="posts__img" src="img/nfts/nft6.png" alt="nft"></picture>
+			</div>
+			<div class="posts__title">posersnft</div>
+			<div class="posts__serial">poser #4234</div>
+			<div class="posts__money">
+				<div class="posts__position">last</div>
+				<div class="posts__amount">0.12</div>
+				<div class="posts__coin"><img src="img/coins/eth.svg" alt="coin"></div>
+			</div>
+		</div>
+		<div class="posts__item">
+			<div class="posts__image border-rectangle">
+				<picture><source srcset="img/nfts/nft7.webp" type="image/webp"><img class="posts__img" src="img/nfts/nft7.png" alt="nft"></picture>
+			</div>
+			<div class="posts__title">posersnft</div>
+			<div class="posts__serial">poser #4234</div>
+			<div class="posts__money">
+				<div class="posts__position">last</div>
+				<div class="posts__amount">0.12</div>
+				<div class="posts__coin"><img src="img/coins/eth.svg" alt="coin"></div>
+			</div>
+		</div>
+		<div class="posts__item">
+			<div class="posts__image border-rectangle">
+				<picture><source srcset="img/nfts/nft8.webp" type="image/webp"><img class="posts__img" src="img/nfts/nft8.png" alt="nft"></picture>
+			</div>
+			<div class="posts__title">posersnft</div>
+			<div class="posts__serial">poser #4234</div>
+			<div class="posts__money">
+				<div class="posts__position">last</div>
+				<div class="posts__amount">0.2</div>
+				<div class="posts__coin"><img src="img/coins/eth.svg" alt="coin"></div>
+			</div>
+		</div>
+		<div class="posts__item">
+			<div class="posts__image border-rectangle">
+				<picture><source srcset="img/nfts/nft9.webp" type="image/webp"><img class="posts__img" src="img/nfts/nft9.png" alt="nft"></picture>
+			</div>
+			<div class="posts__title">posersnft</div>
+			<div class="posts__serial">poser #4234</div>
+			<div class="posts__money">
+				<div class="posts__position">last</div>
+				<div class="posts__amount">0.12</div>
+				<div class="posts__coin"><img src="img/coins/eth.svg" alt="coin"></div>
+			</div>
+		</div>
+		<div class="posts__item">
+			<div class="posts__image border-rectangle">
+				<picture><source srcset="img/nfts/nft10.webp" type="image/webp"><img class="posts__img" src="img/nfts/nft10.png" alt="nft"></picture>
+			</div>
+			<div class="posts__title">posersnft</div>
+			<div class="posts__serial">poser #4234</div>
+			<div class="posts__money">
+				<div class="posts__position">last</div>
+				<div class="posts__amount">0.12</div>
+				<div class="posts__coin"><img src="img/coins/eth.svg" alt="coin"></div>
+			</div>
+		</div>
 		<div class="posts__item">
 			<div class="posts__image border-rectangle">
 				<picture><source srcset="img/nfts/nft1.webp" type="image/webp"><img class="posts__img" src="img/nfts/nft1.png" alt="nft"></picture>
@@ -254,13 +406,63 @@
 		<div class="summary__head">
 			<div class="summary__title">summary</div>
 			<div class="summary__changers">
-				<div class="summary__changer summary__changer_before">3</div>
-			</div>
+	<div class="summary__changer summary__changer_before">3</div>
+	<div class="summary__changer_arrow">
+		<img src="img/icons/changer-arrow.svg" alt="arrow">
+	</div>
+	<div class="summary__changer summary__changer_after summary__changer_after_active">@@after</div>
+</div>
 			<div class="summary__modify">clear</div>
 			<div class="summary__hidder summary__hidder_open"></div>
 		</div>
+
+		<div class="summary__subhead">
+			<p>You are adding</p>
+			<p><span>2 item</span></p>
+		</div>
+		
 		<div class="summary__content">
 			<div class="summary__items">
+				<div class="summary__item summary-item">
+					<div class="summary-item__image">
+						<picture><source srcset="img/nfts/nft1.webp" type="image/webp"><img src="img/nfts/nft1.png" alt="nft"></picture>
+					</div>
+					<div class="summary-item__content">
+						<div class="summary-item__title">posersnft</div>
+						<div class="summary-item__serial">poser #4234</div>
+					</div>
+					<div class="summary-item__delete"></div>
+				</div>
+				<div class="summary__item summary-item">
+					<div class="summary-item__image">
+						<picture><source srcset="img/nfts/nft1.webp" type="image/webp"><img src="img/nfts/nft1.png" alt="nft"></picture>
+					</div>
+					<div class="summary-item__content">
+						<div class="summary-item__title">posersnft</div>
+						<div class="summary-item__serial">poser #4234</div>
+					</div>
+					<div class="summary-item__delete"></div>
+				</div>
+				<div class="summary__item summary-item">
+					<div class="summary-item__image">
+						<picture><source srcset="img/nfts/nft1.webp" type="image/webp"><img src="img/nfts/nft1.png" alt="nft"></picture>
+					</div>
+					<div class="summary-item__content">
+						<div class="summary-item__title">posersnft</div>
+						<div class="summary-item__serial">poser #4234</div>
+					</div>
+					<div class="summary-item__delete"></div>
+				</div>
+				<div class="summary__item summary-item">
+					<div class="summary-item__image">
+						<picture><source srcset="img/nfts/nft1.webp" type="image/webp"><img src="img/nfts/nft1.png" alt="nft"></picture>
+					</div>
+					<div class="summary-item__content">
+						<div class="summary-item__title">posersnft</div>
+						<div class="summary-item__serial">poser #4234</div>
+					</div>
+					<div class="summary-item__delete"></div>
+				</div>
 				<div class="summary__item summary-item">
 					<div class="summary-item__image">
 						<picture><source srcset="img/nfts/nft1.webp" type="image/webp"><img src="img/nfts/nft1.png" alt="nft"></picture>
@@ -303,7 +505,7 @@
 			</div>
 		</main>
 	</div>
-	<script src="js/app.min.js?_v=20221011113343"></script>
+	<script src="js/app.min.js?_v=20221016123247"></script>
 </body>
 
 </html>
