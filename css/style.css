@@ -114,6 +114,18 @@ a {
   --volume_x: 0px;
 }
 
+.scrollnone {
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.scrollnone::-webkit-scrollbar {
+  display: none;
+  /* Safari and Chrome */
+}
+
 .burger {
   width: 24px;
   height: 25px;
@@ -874,7 +886,7 @@ a {
 }
 
 .swap-wallet__checker_active {
-  background-color: #9ECA58;
+  background-color: #9eca58;
 }
 
 .market {
@@ -989,30 +1001,6 @@ a {
   display: none;
 }
 
-.summary {
-  max-width: 280px;
-  width: 100%;
-  background: #efefed;
-  padding: 24px;
-}
-
-.summary_wallet .swap-wallet {
-  display: none;
-}
-
-.summary__inner {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.summary__head {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 52px;
-}
-
 .summary__changers {
   display: none;
   gap: 8px;
@@ -1050,6 +1038,44 @@ a {
   background: #9eca58;
 }
 
+.summary_pending .summary__changer_before {
+  display: flex;
+}
+
+.summary_request .summary__changers {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.summary_change .summary__changer_arrow,
+.summary_change .summary__changer_after {
+  display: flex;
+}
+
+.summary {
+  max-width: 280px;
+  width: 100%;
+  background: #efefed;
+  padding: 24px;
+}
+
+.summary_wallet .swap-wallet {
+  display: none;
+}
+
+.summary__inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.summary__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 52px;
+}
+
 .summary__hidder {
   display: none;
   width: 15px;
@@ -1078,15 +1104,6 @@ a {
   flex-grow: 1;
   margin-bottom: 20px;
   overflow-y: auto;
-  -ms-overflow-style: none;
-  /* Internet Explorer 10+ */
-  scrollbar-width: none;
-  /* Firefox */
-}
-
-.summary__content::-webkit-scrollbar {
-  display: none;
-  /* Safari and Chrome */
 }
 
 .summary__items {
@@ -1204,11 +1221,6 @@ a {
   display: none;
 }
 
-.summary_request .summary__changers {
-  display: flex;
-  margin-bottom: 16px;
-}
-
 .summary_request .summary__head {
   align-items: flex-start;
   flex-direction: column;
@@ -1221,11 +1233,6 @@ a {
 
 .summary_request .summary__title_request {
   display: none;
-}
-
-.summary_change .summary__changer_arrow,
-.summary_change .summary__changer_after {
-  display: flex;
 }
 
 .summary-item {
@@ -1289,7 +1296,7 @@ a {
 }
 
 .swap-request__content_incoming .summary-wallet__number {
-  background-color: #9ECA58;
+  background-color: #9eca58;
 }
 
 .swap-request__content_incoming .swap-request__item_active {
@@ -1297,7 +1304,7 @@ a {
 }
 
 .swap-request__content_sent .summary-wallet__number {
-  background-color: #FF8ED9;
+  background-color: #ff8ed9;
 }
 
 .swap-request__content_sent .swap-request__item_active {
@@ -1363,7 +1370,7 @@ a {
   position: absolute;
   top: 0;
   left: 50%;
-  background-color: #9ECA58;
+  background-color: #9eca58;
 }
 
 .request-notify::before {
@@ -1398,7 +1405,7 @@ a {
   position: absolute;
   left: 0;
   top: 0;
-  background: #9ECA58;
+  background: #9eca58;
   transform: translate(-100%, -100%);
 }
 
@@ -1826,7 +1833,7 @@ a {
   color: #000000;
 }
 
-.connect__button {
+.connect .button {
   background-color: #ff7934;
   padding: 14px 29px;
 }
@@ -2517,6 +2524,27 @@ a {
     display: block;
   }
 
+  .summary__changers {
+    display: flex;
+  }
+
+  .summary_swap .summary__changer_before {
+    display: flex;
+  }
+
+  .summary_swap_zero .summary__changer_after {
+    background: #e3e3e1;
+    color: #7a7c7f;
+  }
+
+  .summary_close .summary__changers {
+    flex-grow: 1;
+  }
+
+  .summary_request .summary__changers {
+    display: none;
+  }
+
   .summary {
     position: fixed;
     left: 0;
@@ -2536,10 +2564,6 @@ a {
   .summary_close .summary__buttons,
   .summary_close .summary__button {
     display: none;
-  }
-
-  .summary_close .summary__changers {
-    flex-grow: 1;
   }
 
   .summary_close .summary__hidder {
@@ -2573,7 +2597,6 @@ a {
     margin-bottom: 0;
   }
 
-  .summary_request .summary__changers,
   .summary_request .summary__hidder {
     display: none;
   }
@@ -2617,10 +2640,6 @@ a {
     padding: 21px 0 15px 0;
     overflow-y: auto;
     max-height: 63vh;
-  }
-
-  .summary__changers {
-    display: flex;
   }
 
   .summary__modify {
